@@ -80,7 +80,7 @@ export default function Home() {
             />
           </div>
 
-             {/* <div className="absolute top-[400px] z-20 ">
+          {/* <div className="absolute top-[400px] z-20 ">
             <Image
               src="/images/hero-elipse.svg"
               width={0}
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
           </div>
 
-            <div className="absolute top-[400px] z-30 left-1/2 -translate-x-1/2">
+          <div className="absolute top-[400px] z-30 left-1/2 -translate-x-1/2">
             <Image
               src="/images/hero-elipse2.svg"
               width={0}
@@ -243,6 +243,15 @@ export default function Home() {
             />
           </div>
 
+          <div className="absolute top-[700px] z-30 left-1/2 -translate-x-1/2">
+            <Image
+              src="/images/hero-elipse2.svg"
+              width={0}
+              height={0}
+              alt="CLOUDSEC Logo"
+              className="w-[1200px]"
+            />
+          </div>
         </div>
 
         {/* EXPLORE SECTION */}
