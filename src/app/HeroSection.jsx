@@ -1,49 +1,205 @@
+// components/Hero.jsx
 import Image from "next/image";
-import Head from "next/head";
-import Navbar from "./Navbar";
-import Hero from "../../Hero";
 
-export default function Home() {
+export default function HeroSection() {
   return (
-    <div className="bg-[#111111] min-h-screen">
-      <Head>
-        <title>CLOUDSEC</title>
-        <meta
-          name="description"
-          content="Simplifying Data Privacy & Security"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+    <div className="bg-[#050505] rounded-[30px] lg:rounded-[50px] relative min-h-[800px] lg:h-[1087px] font-poppin mx-2 lg:mx-0">
+          {/* VECTORS 1 SECTION */}
 
-      <div className="bg-[#111111] relative">
-       
-        <Navbar />
+          <div className="absolute top-[-150px] z-30 left-1/2 -translate-x-1/2">
+            <Image
+              src="/images/hero-elipse.svg"
+              width={0}
+              height={0}
+              alt="CLOUDSEC Logo"
+              className="w-[1200px]"
+            />
+          </div>
 
-        
+             {/* <div className="absolute top-[400px] z-20 ">
+            <Image
+              src="/images/hero-elipse.svg"
+              width={0}
+              height={0}
+              alt="CLOUDSEC Logo"
+              className="w-full"
+            />
+          </div> */}
 
-        <Hero />
+          <div className="hidden lg:flex justify-between">
+            <div className="relative">
+              <div>
+                <Image
+                  src="/images/Vector 1.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Vector"
+                />
+              </div>
+              <div className="absolute top-[50px] left-[190px]">
+                <Image
+                  src="/images/insignity.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Insignity"
+                />
+              </div>
+              <div className="absolute top-[135px] left-[60px]">
+                <Image
+                  src="/images/informatix.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Informatix"
+                />
+              </div>
+            </div>
+            <div className="relative">
+              <div>
+                <Image
+                  src="/images/Vector 2.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Vector"
+                />
+              </div>
+              <div className="absolute top-[50px] left-[100px]">
+                <Image
+                  src="/images/automation.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Automation"
+                />
+              </div>
+              <div className="absolute top-[135px] left-[230px]">
+                <Image
+                  src="/images/interaction.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Interaction"
+                />
+              </div>
+            </div>
+          </div>
 
-        {/* EXPLORE SECTION */}
-        <div className="px-4 sm:px-8 lg:px-[110px] py-8 sm:py-16 ">
-          <div className="flex flex-col justify-center gap-5">
+          {/* TEXT SECTION */}
+          <div className="flex flex-col gap-7 justify-center items-center px-4 py-8 lg:py-0">
+            <div className="w-auto lg:w-[273px] h-[43px] font-poppin text-center text-[#DFDFDF] pt-[5px] tracking-[1px] rounded-[24px] border-2 border-solid border-[#DFDFDF] lg:absolute lg:top-[200px] px-6">
+              Track Performance
+            </div>
+            <div className="text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins w-full max-w-[608px] lg:absolute lg:top-[280px] text-center leading-tight">
+              Simplifying Data Privacy & Security
+            </div>
+            <div className="lg:absolute lg:top-[490px] text-[16px] sm:text-[18px] lg:text-[20px] font-poppins w-full max-w-[729px] text-center text-[#DFDFDF] mt-[10px] px-4">
+              At CLOUDSEC, we recognize the challenges businesses face in
+              navigating evolving data security and compliance regulations. Our
+              expert team is dedicated to identifying vulnerabilities and
+              implementing effective solutions, ensuring your organization
+              remains secure and compliant in an ever-changing threat landscape.
+            </div>
+            <div className="lg:absolute lg:top-[700px] bg-[#ffffff] w-[182px] py-[11px] font-semibold rounded-[24px] text-[#000000] text-center text-[16px] font-poppin mt-8 lg:mt-0">
+              Get Started
+            </div>
+          </div>
+
+          {/* VECTORS 2 SECTION */}
+          <div className="hidden lg:flex justify-between absolute lg:top-[770px] w-full">
+            <div className="relative">
+              <div>
+                <Image
+                  src="/images/Vector 3.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Vector"
+                />
+              </div>
+              <div className="absolute top-[50px] left-[60px]">
+                <Image
+                  src="/images/forecasting.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Forecasting"
+                />
+              </div>
+              <div className="absolute top-[135px] left-[190px]">
+                <Image
+                  src="/images/informatix.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Informatix"
+                />
+              </div>
+            </div>
+            <div className="relative">
+              <div>
+                <Image
+                  src="/images/Vector 4.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Vector"
+                />
+              </div>
+              <div className="absolute top-[50px] left-[230px]">
+                <Image
+                  src="/images/exploration.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Exploration"
+                />
+              </div>
+              <div className="absolute top-[135px] left-[100px]">
+                <Image
+                  src="/images/visualization.svg"
+                  width={"0"}
+                  height={"0"}
+                  className="w-full h-full"
+                  alt="Visualization"
+                />
+              </div>
+            </div>
+          </div>
+
+            <div className="absolute top-[400px] z-30 left-1/2 -translate-x-1/2">
+            <Image
+              src="/images/hero-elipse2.svg"
+              width={0}
+              height={0}
+              alt="CLOUDSEC Logo"
+              className="w-[1200px]"
+            />
+          </div>
+
+        </div>
+
+        <div className="px-4 sm:px-8 lg:px-[110px] py-8 sm:py-16 lg:py-[130px]">
+          <div className="flex flex-col justify-center gap-7">
             <div className="text-center">
               <h1 className="text-[32px] sm:text-[44px] lg:text-[55px] text-[#ffffff] font-poppin">
                 Explore Our Services
               </h1>
             </div>
-           
-            <div className="flex justify-center item-center text-center w-[1260px] text-[20px]  text-[#DFDFDF] leading-[133%] font-normal">
-             <div className="w-[735px]">
-              No matter the size of your business or its location—whether in the
-              U.S. or internationally—our tailored approach ensures your
-              security needs are fully addressed with solutions customized to
-              your specific requirements.
-             </div>
+            <div className="flex justify-center w-full">
+              <p className="text-[16px] sm:text-[18px] lg:text-[20px] text-[#DFDFDF] leading-[1.33] font-normal w-[729px] text-center">
+                No matter the size of your business or its location—whether in
+                the U.S. or internationally— our tailored approach ensures your
+                security needs are fully addressed with solutions customized to
+                your specific requirements.
+              </p>
             </div>
           </div>
 
           <div className="flex flex-col xl:flex-row pt-[40px] lg:pt-[80px] pb-[20px] gap-7">
-            {/* CYBERSECURITY */}
             <div className="flex-1">
               <div className="w-full max-w-[745px] h-auto bg-[#050505] rounded-[30px] p-5 lg:pt-9">
                 <div className="flex flex-col gap-7">
@@ -57,11 +213,11 @@ export default function Home() {
                         className="w-[50px] sm:w-[67px] h-auto"
                       />
                     </div>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-5">
                       <div className="text-[20px] sm:text-[24px] text-[#ffffff]">
                         Cybersecurity
                       </div>
-                      <div className="w-full max-w-[545px]">
+                      <div className="w-full max-w-[574px]">
                         <p className="text-[#D9D9D9] text-[14px] sm:text-[16px]">
                           We provide a structured framework for your
                           organization's information security management system,
@@ -74,7 +230,7 @@ export default function Home() {
 
                   {/* CYBERSECURITY SECTION */}
                   <div className="flex flex-col lg:flex-row gap-3">
-                    <div className="w-full lg:w-[458px] h-auto lg:h-[284px] rounded-[30px] bg-[#202020] p-5 lg:p-0">
+                    <div className="w-full lg:w-[458px] h-auto lg:h-[284px] rounded-[20px] bg-[#202020] p-5 lg:p-0">
                       <div className="flex gap-5 lg:gap-7 lg:px-5 lg:pt-7">
                         <div className="mt-3 flex-shrink-0">
                           <Image
@@ -142,7 +298,7 @@ export default function Home() {
             </div>
 
             {/* PRIVACY SECTION */}
-            <div className="w-full max-w-[525px] xl:max-w-none xl:w-[525px] h-auto rounded-[30px] bg-[#050505] pt-7 mx-auto xl:mx-0">
+            <div className="w-full max-w-[525px] xl:max-w-none xl:w-[525px] h-auto rounded-[20px] bg-[#050505] pt-7 mx-auto xl:mx-0">
               <div className="flex flex-col sm:flex-row gap-5 px-5">
                 <div className="flex-shrink-0">
                   <Image
@@ -153,7 +309,7 @@ export default function Home() {
                     className="w-[50px] sm:w-[67px] h-auto"
                   />
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-5">
                   <div className="text-[20px] sm:text-[24px] text-[#ffffff]">
                     Privacy
                   </div>
@@ -175,7 +331,7 @@ export default function Home() {
                         className="w-full h-auto"
                       />
                     </div>
-                    <div className="absolute top-[30px] left-[25px]">
+                    <div className="absolute top-[25px] left-[17px]">
                       <Image
                         src="/images/Rectangle 11.svg"
                         width={150}
@@ -184,7 +340,7 @@ export default function Home() {
                         className="w-[150px] h-auto"
                       />
                     </div>
-                    <div className="absolute top-[57px] left-[60px]">
+                    <div className="absolute top-[65px] left-[70px]">
                       <Image
                         src="/images/privacy-img.svg"
                         width={80}
@@ -201,8 +357,8 @@ export default function Home() {
 
           <div className="flex flex-col xl:flex-row gap-5 mt-5">
             {/* COMPLIANCE SECTION */}
-            <div className="w-full max-w-[525px] xl:max-w-none xl:w-[525px] h-auto bg-[#050505] rounded-[30px] mx-auto xl:mx-0">
-              <div className="px-5 pt-9 flex flex-col sm:flex-row gap-7">
+            <div className="w-full max-w-[525px] xl:max-w-none xl:w-[525px] h-auto bg-[#050505] rounded-[20px] mx-auto xl:mx-0">
+              <div className="px-5 pt-9 flex flex-col sm:flex-row gap-5">
                 <div className="flex-shrink-0">
                   <Image
                     src="/images/cybersecurity.svg"
@@ -216,8 +372,8 @@ export default function Home() {
                   <div className="text-[#ffffff] text-[20px] sm:text-[24px]">
                     Compliance
                   </div>
-                  <div className="w-full ">
-                    <p className="text-[#D9D9D9] text-[14px] sm:text-[16px] leading-[133%] max-w-[449px]">
+                  <div className="w-full max-w-[394px]">
+                    <p className="text-[#D9D9D9] text-[14px] sm:text-[16px]">
                       Modern data security comes with a maze of regulations and
                       acronyms. We simplify compliance by guiding you through
                       the complexities of today's regulatory requirements.
@@ -228,8 +384,8 @@ export default function Home() {
               <div className="mt-8 lg:mt-[55px]">
                 <Image
                   src="/images/complaince-img.svg"
-                  width={504}
-                  height={252}
+                  width={525}
+                  height={300}
                   alt="Compliance"
                   className="w-full h-auto"
                 />
@@ -237,8 +393,8 @@ export default function Home() {
             </div>
 
             {/* CONSULTING SECTION */}
-            <div className="w-full max-w-[743px] xl:max-w-none xl:w-[743px] h-auto rounded-[30px] bg-[#050505] mx-auto xl:mx-0">
-              <div className="px-5 lg:px-7 pt-10 flex flex-col sm:flex-row gap-7">
+            <div className="w-full max-w-[743px] xl:max-w-none xl:w-[743px] h-auto rounded-[20px] bg-[#050505] mx-auto xl:mx-0">
+              <div className="px-5 lg:px-7 pt-10 flex flex-col sm:flex-row gap-5">
                 <div className="flex-shrink-0">
                   <Image
                     src="/images/cybersecurity.svg"
@@ -288,15 +444,15 @@ export default function Home() {
 
                 <div className="flex flex-col gap-2">
                   <div className="text-[#ffffff] text-[24px]">Consulting</div>
-                  <div className="w-[470px] h-[84px] leading-[133%] font-normal">
-                    <p className="text-[#D9D9D9] text-[16px] font-poppin">
-                      whether you need to update your privacy policy, terms of
+                  <div className="w-[535px]">
+                    <p className="text-[#D9D9D9] text-[16px]">
+                      Whether you need to update your privacy policy, terms of
                       service, or other security documentation, we make the
                       process straightforward and stress-free, ensuring your
                       policies remain clear, compliant, and up-to-date.
                     </p>
                   </div>
-                  <div className="relative mt-1">
+                  <div className="relative">
                     <div className="absolute top-[5px] left-[170px]">
                       <Image
                         width={"0"}
@@ -331,8 +487,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* PROFESSIONAL SECTION */}
-        <div className="px-4 sm:px-7 lg:px-[50px] py-8 lg:py-0 lg:h-[550px] flex flex-col justify-center items-center">
+        <div className="px-4 sm:px-8 lg:px-[110px] py-8 lg:py-0 lg:h-[550px] flex flex-col justify-center items-center">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[80px] items-center lg:items-start">
             <div className="flex flex-col gap-[30px] lg:gap-[50px] text-center lg:text-left">
               <div className="text-[32px] sm:text-[44px] lg:text-[55px] text-[#ffffff] font-semibold w-full max-w-[450px] leading-tight">
@@ -365,7 +520,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* QUESTION SECTION */}
         <div className="px-4 sm:px-8 lg:px-[80px] py-[40px] flex flex-col gap-7">
           <div className="w-full max-w-[620px] text-[#ffffff] text-[32px] sm:text-[48px] lg:text-[74.56px] leading-tight">
             Frequently Asked Questions
@@ -404,14 +558,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="  pt-[40px] lg:pt-[80px] pb-[20px] relative">
-          <div className="lg:absolute lg:top-[60px] lg:left-[170px] mb-4 lg:mb-0">
+        <div className="px-4 sm:px-8 lg:px-[80px] pt-[40px] lg:pt-[80px] pb-[20px] relative">
+          <div className="lg:absolute lg:top-[60px] lg:left-[120px] mb-4 lg:mb-0">
             <Image
               src="/images/cloudsec-logo.svg"
               width={150}
               height={40}
               alt="CLOUDSEC Logo"
-              className="w-[120px] lg:w-[150px] h-auto  lg:mx-0"
+              className="w-[120px] lg:w-[150px] h-auto mx-auto lg:mx-0"
             />
           </div>
           <div className="w-full overflow-hidden">
@@ -424,7 +578,6 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-    </div>
+        </>
   );
 }
