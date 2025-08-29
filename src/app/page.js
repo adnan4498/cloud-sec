@@ -4,10 +4,12 @@ import Navbar from "./Navbar";
 import Hero from "../../Hero";
 import { FacebookOutlined } from "@ant-design/icons";
 import { SparklesCore } from "./components/ui/sparkles";
+import SmoothScrollProvider from "./components/smooth-scroll-provider";
 
 export default function Home() {
   return (
     <>
+    <SmoothScrollProvider>
       {/* <div className="h-[40rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-screen">
           <SparklesCore
@@ -761,6 +763,7 @@ export default function Home() {
           </footer>
         </div>
       </div>
+      </SmoothScrollProvider>
     </>
   );
 }
