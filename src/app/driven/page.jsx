@@ -141,22 +141,17 @@ export default function Home() {
                 </div>
                   </div>
                 </div>
-                 <div>
-              <Image
-                src="/images/commitment-img.svg"
-                width={"0"}
-                height={"0"}
-                alt="Commitment"
-                className=" 2xl:w-[291px] xl:w-[291px] 1080:w-[190px] 2xl:h-[450px] xl:h-[420px]  1080:h-[450px]"
-              />
-            </div>
+                 
               </div>
             </div>
           </div>
+
         </div>
+         
         <FAQ/>
         <Footer/>
+    
       </div>
-    </SmoothScrollProvider>
+    </SmoothScrollProvider>  
   );
 }
