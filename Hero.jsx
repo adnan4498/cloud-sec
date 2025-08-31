@@ -100,7 +100,8 @@ const Hero = ({heading, customWidth="608"}) => {
             <div>Track Performance</div>
           </div>
 
-          <div className={`text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins w-full  max-w-[${customWidth}px] lg:absolute lg:top-[280px] text-center leading-tight`}>
+          <div className={`text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins  max-w-[${customWidth}px] lg:absolute lg:top-[280px] text-center leading-tight`}>
+          {/* <div className={`text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins  max-w-[750px] lg:absolute lg:top-[280px] text-center leading-tight`}> */}
             {/* Simplifying Data Privacy & Security */}
             {heading}
           </div>
