@@ -9,7 +9,7 @@ import FAQ from "../ourComponents/FAQ";
 export default function Home() {
   return (
     <SmoothScrollProvider>
-      <div className="bg-[#111111] relative">
+      <div className="bg-[#111111] relative"> 
         <Navbar />
         <Hero />
         {/* SIMPLIFYING SECTION */}
