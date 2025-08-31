@@ -9,6 +9,10 @@ import Footer from "./shared/Footer";
 import FAQ from "./ourComponents/FAQ";
 
 export default function Home() {
+
+  let heading = `Simplifying Data Privacy & Security`;
+  let customWidth = "608"
+
   return (
     <>
       <SmoothScrollProvider>
@@ -25,7 +29,7 @@ export default function Home() {
           <div className="bg-[#111111] relative">
             <Navbar />
 
-            <Hero />
+            <Hero heading={heading} customWidth={customWidth} />
 
             <div className="px-4 sm:px-8 lg:px-[110px] py-8 sm:py-16 overflow-hidden">
               <div className="flex flex-col justify-center gap-5">

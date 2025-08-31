@@ -7,11 +7,15 @@ import Footer from "../shared/Footer";
 import FAQ from "../ourComponents/FAQ";
 
 export default function Home() {
-  return (
+
+  let heading = "Cybersecurity Maturity Model Certification"
+  let customWidth = "750"
+
+  return ( 
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative"> 
         <Navbar />
-        <Hero />
+        <Hero heading={heading} customWidth={customWidth} />
         {/* SIMPLIFYING SECTION */}
         <div className=" 2xl:py-[180px] 2xl:px-[100px] xl:px-[80px] xl:py-[150px] 1080:py-[150px] 1080:px-[80px]">
           <div className="flex justify-center">

@@ -7,12 +7,16 @@ import Footer from "../shared/Footer";
 import FAQ from "../ourComponents/FAQ";
 
 export default function Home() {
+  let heading = "Driven by Purpose. Committed with Passion.";
+  let customWidth = "750";
+
   return (
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative">
         <Navbar />
 
-        <Hero />
+        <Hero heading={heading} customWidth={customWidth} />
+
         {/* OUR MISSION SECTION */}
         <div className="2xl:px-[110px] xl:px-[80px] py-[90px] flex flex-col gap-13 px-[50px]">
           <div className=" w-[273px] h-[43px] text-[16px] text-[#DFDFDF] rounded-[24px] border-1 border-solid border-[#DFDFDF] flex justify-center items-center  text-center hover:bg-[#FFFFFF] hover:text-[#000] transition  ease-in-out cursor-pointer ">
@@ -137,21 +141,18 @@ export default function Home() {
                     </div>
                     <div className="2xl:w-[299px] 2xl:h-[130px] xl:w-[299px] xl:h-[100px] w-[200px] h-[120px]"></div>
                     <div className=" w-[150px] xl:w-[162px] border-1 h-[36px] xl:h-[40px] flex justify-center items-center border-solid bg-[#ffffff]  cursor-pointer z-50 hover:bg-black hover:text-white transition-all duration-100 ease-in-out  rounded-[24px] text-center text-[#000000] text-[14px] xl:text-[16px] mx-auto lg:mx-0">
-                  <div>LEARN MORE</div>
-                </div>
+                      <div>LEARN MORE</div>
+                    </div>
                   </div>
                 </div>
-                 
               </div>
             </div>
           </div>
-
         </div>
-         
-        <FAQ/>
-        <Footer/>
-    
+
+        <FAQ />
+        <Footer />
       </div>
-    </SmoothScrollProvider>  
+    </SmoothScrollProvider>
   );
 }

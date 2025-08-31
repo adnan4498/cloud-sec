@@ -2,7 +2,7 @@ import { SparklesCore } from "@/app/components/ui/sparkles";
 import Image from "next/image";
 import React from "react";
 
-const Hero = () => {
+const Hero = ({heading, customWidth="608"}) => {
   return (
     <>
       <div className="bg-[#050505] rounded-[30px] lg:rounded-[50px] relative min-h-[800px] lg:h-[1087px] font-poppin mx-2 lg:mx-0">
@@ -100,8 +100,9 @@ const Hero = () => {
             <div>Track Performance</div>
           </div>
 
-          <div className="text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins w-full max-w-[608px] lg:absolute lg:top-[280px] text-center leading-tight">
-            Simplifying Data Privacy & Security
+          <div className={`text-[32px] sm:text-[48px] lg:text-[64px] text-[#ffffff] font-poppins w-full  max-w-[${customWidth}px] lg:absolute lg:top-[280px] text-center leading-tight`}>
+            {/* Simplifying Data Privacy & Security */}
+            {heading}
           </div>
           <div className="lg:absolute lg:top-[490px] leading-[133%] font-normal  sm:text-[18px] lg:text-[20px] w-full max-w-[729px] max-h-[135px] flex justify-center items-center text-center text-[#DFDFDF]">
             <div className="text-center">

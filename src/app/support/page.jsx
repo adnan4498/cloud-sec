@@ -7,11 +7,13 @@ import Footer from "../shared/Footer";
 import FAQ from "../ourComponents/FAQ";
 
 export default function Home() {
+  let heading = "ISO 27001 Certification Support";
+
   return (
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative">
         <Navbar />
-        <Hero />
+        <Hero heading={heading} />
         <div className="2xl:px-[80px] 2xl:py-[300px] xl:px-[50px] xl:py-[180px] 1080:py-[150px] ">
           <div className="flex justify-center 2xl:gap-18 xl:gap-18 1080:gap-20">
             <div className="flex flex-col gap-[50px]">
@@ -165,8 +167,6 @@ export default function Home() {
         </div>
         <FAQ />
         <Footer />
-
-      
       </div>
     </SmoothScrollProvider>
   );
