@@ -338,4 +338,4 @@ export default function Home() {
       </SmoothScrollProvider>
     </>
   );
-}
+} 
