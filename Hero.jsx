@@ -2,7 +2,7 @@ import { SparklesCore } from "@/app/components/ui/sparkles";
 import Image from "next/image";
 import React from "react";
 
-const Hero = ({heading, customWidth="608"}) => {
+const Hero = ({heading, customWidth="608", paragraph}) => {
   return (
     <>
       <div className="bg-[#050505] rounded-[30px] lg:rounded-[50px] relative min-h-[800px] lg:h-[1087px] font-poppin mx-2 lg:mx-0">
@@ -107,11 +107,12 @@ const Hero = ({heading, customWidth="608"}) => {
           </div>
           <div className="lg:absolute lg:top-[490px] leading-[133%] font-normal  sm:text-[18px] lg:text-[20px] w-full max-w-[729px] max-h-[135px] flex justify-center items-center text-center text-[#DFDFDF]">
             <div className="text-center">
-              At CLOUDSEC, we recognize the challenges businesses face in
+              {/* At CLOUDSEC, we recognize the challenges businesses face in
               navigating evolving data security and compliance regulations. Our
               expert team is dedicated to identifying vulnerabilities and
               implementing effective solutions, ensuring your organization
-              remains secure and compliant in an ever-changing threat landscape.
+              remains secure and compliant in an ever-changing threat landscape. */}
+              {paragraph}
             </div>
           </div>
 

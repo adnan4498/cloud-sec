@@ -9,13 +9,14 @@ import FAQ from "../ourComponents/FAQ";
 export default function Home() {
   let heading = "Driven by Purpose. Committed with Passion.";
   let customWidth = "750";
+  let paragraph = "At CLOUDSEC we believe every business deserves the freedom to focus on growth—without worrying about data breaches or regulatory risks. Our team delivers expert guidance in data privacy, cybersecurity, and compliance so you can confidently scale your operations in a secure environment."
 
   return (
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative">
         <Navbar />
 
-        <Hero heading={heading} customWidth={customWidth} />
+          <Hero heading={heading} customWidth={customWidth} paragraph={paragraph}/>
 
         {/* OUR MISSION SECTION */}
         <div className="2xl:px-[110px] xl:px-[80px] py-[90px] flex flex-col gap-13 px-[50px]">

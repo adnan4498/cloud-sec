@@ -10,12 +10,13 @@ export default function Home() {
 
   let heading = "Cybersecurity Maturity Model Certification"
   let customWidth = "750"
+  let paragraph = "Achieving CMMC certification is critical for businesses seeking to work with the U.S. Department of Defense (DoD) and other government agencies.CLOUDSEC specializes in guiding organizations through the CMMC process, helping you secure sensitive information, meet compliance requirements, and position your business for success in federal contracting."
 
   return ( 
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative"> 
         <Navbar />
-        <Hero heading={heading} customWidth={customWidth} />
+        <Hero heading={heading} customWidth={customWidth} paragraph={paragraph} />
         {/* SIMPLIFYING SECTION */}
         <div className=" 2xl:py-[180px] 2xl:px-[100px] xl:px-[80px] xl:py-[150px] 1080:py-[150px] 1080:px-[80px]">
           <div className="flex justify-center">

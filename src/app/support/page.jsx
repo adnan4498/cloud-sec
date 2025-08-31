@@ -8,12 +8,13 @@ import FAQ from "../ourComponents/FAQ";
 
 export default function Home() {
   let heading = "ISO 27001 Certification Support";
+   let paragraph = "At CLOUDSEC, we have a proven track record of guiding businesses—regardless of their starting point—through to successful ISO 27001 certification. With a 100% audit success rate, we help organizations demonstrate their commitment to cybersecurity and data privacy while enhancing operational resilience and market credibility."
 
   return (
     <SmoothScrollProvider>
       <div className="bg-[#111111] relative">
         <Navbar />
-        <Hero heading={heading} />
+            <Hero heading={heading}  paragraph={paragraph}/>
         <div className="2xl:px-[80px] 2xl:py-[300px] xl:px-[50px] xl:py-[180px] 1080:py-[150px] ">
           <div className="flex justify-center 2xl:gap-18 xl:gap-18 1080:gap-20">
             <div className="flex flex-col gap-[50px]">

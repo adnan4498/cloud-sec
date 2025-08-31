@@ -12,6 +12,7 @@ export default function Home() {
 
   let heading = `Simplifying Data Privacy & Security`;
   let customWidth = "608"
+  let paragraph = "At CLOUDSEC we believe every business deserves the freedom to focus on growth—without worrying about data breaches or regulatory risks. Our team delivers expert guidance in data privacy, cybersecurity, and compliance so you can confidently scale your operations in a secure environment."
 
   return (
     <>
@@ -29,7 +30,7 @@ export default function Home() {
           <div className="bg-[#111111] relative">
             <Navbar />
 
-            <Hero heading={heading} customWidth={customWidth} />
+            <Hero heading={heading} customWidth={customWidth} paragraph={paragraph}/>
 
             <div className="px-4 sm:px-8 lg:px-[110px] py-8 sm:py-16 overflow-hidden">
               <div className="flex flex-col justify-center gap-5">
