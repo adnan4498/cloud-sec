@@ -81,7 +81,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="flex flex-col 2xl:px-0 xl:px-[20px]  2xl:gap-[50px] xl:gap-[30px] 1080:gap-[30px] 1080:px-[40px] ">
+              <div className="flex flex-col 3xl:items-center 2xl:px-0 xl:px-[20px]  2xl:gap-[50px] xl:gap-[30px] 1080:gap-[30px] 1080:px-[40px] ">
                 <div className="2xl:w-[1240px] h-[1px] text-[#FFFFFF] bg-[#FFFFFF] 1080:w-[900px] xl:w-[1020px]"></div>
                 <div className="flex justify-between items-center px-2 2xl:w-[1240px]  1080:w-[900px] xl:w-[1020px]">
                   <div className="2xl:text-[32px] 2xl:leading-[32px] xl:text-[24px] uppercase font-normal text-[#FFFFFF]">
