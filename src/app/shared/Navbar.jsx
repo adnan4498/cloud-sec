@@ -3,17 +3,82 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Dropdown } from "antd";
+import { useState } from "react";
 
 export default function Navbar() {
-  const pathname = usePathname(); // Get the current route
-  console.log(pathname, "this is pathname")
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   const navItems = [
     { name: "Home", href: "/" },
+    { name: "Services", href: "" },
     { name: "Driven", href: "/driven" },
     { name: "Support", href: "/support" },
     { name: "Cyber Security", href: "/cybersecurity" },
   ];
+
+  // Services dropdown items
+  const serviceCategories = [
+    {
+      title: "Cybersecurity",
+      items: [
+        { name: "Endpoint Security", href: "/cybersecurity/endpoint" },
+        { name: "Network Security", href: "/cybersecurity/network" },
+      ],
+    },
+    {
+      title: "Privacy",
+      items: [
+        {
+          name: "Privacy Impact Assessments",
+          href: "/privacy/privacy-impact-assessments",
+        },
+        { name: "Privacy Policies", href: "/privacy/privacy-policies" },
+        { name: "Cookie Compliance", href: "/privacy/cookie-compliance" },
+      ],
+    },
+    {
+      title: "Compliance",
+      items: [
+        { name: "Audit & Assessment", href: "/compliance/audit" },
+        { name: "Risk Management", href: "/compliance/risk" },
+      ],
+    },
+    {
+      title: "Consulting",
+      items: [
+        { name: "Strategy", href: "/consulting/strategy" },
+        { name: "Training", href: "/consulting/training" },
+      ],
+    },
+  ];
+
+  const dropdownContent = (
+    <div className="bg-[#050505] border border-[#333333] rounded-[16px] p-6 w-[480px] shadow-2xl">
+      <div className="grid grid-cols-2 gap-6">
+        {serviceCategories.map((category, index) => (
+          <div key={index} className="space-y-3">
+            <h3 className="text-white font-semibold text-[16px] mb-3 border-b border-[#333333] pb-2">
+              {category.title}
+            </h3>
+            <div className="space-y-2">
+              {category.items.map((item, itemIndex) => (
+                <Link
+                  key={itemIndex}
+                  href={item.href}
+                  className="block !text-[#cccccc] hover:text-black bg-white hover:bg-white px-3 py-2 rounded-[8px] text-[14px] transition-all duration-200"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="bg-[#111111] relative">
@@ -31,10 +96,35 @@ export default function Navbar() {
           </div>
 
           {/* Nav Links */}
-          <div className="flex-1 max-w-[500px] mx-8 xl:mx-12 2xl:mx-16 z-50">
+          <div className="flex-1 max-w-[550px] mx-8 xl:mx-12 2xl:mx-16 z-50">
             <div className="w-full cursor-pointer h-[45px] bg-[#050505] rounded-[24px] flex justify-between items-center px-4 py-1">
               {navItems.map((item) => {
-                const isActive = pathname === item.href; // Check active page
+                const isActive = pathname === item.href;
+                if (item.name === "Services") {
+                  return (
+                    <Dropdown
+                      key={item.href}
+                      overlay={dropdownContent}
+                      open={open}
+                      onOpenChange={setOpen}
+                      placement="bottomLeft"
+                      trigger={["hover"]}
+                      overlayClassName="services-dropdown"
+                      getPopupContainer={() => document.body}
+                    >
+                      <div
+                        className={`w-[92px] h-[32px] flex justify-center items-center rounded-[24px] text-[14px] transition-colors duration-100 cursor-pointer
+                        ${
+                          isActive || open
+                            ? "bg-[#ffffff] text-[#000000]"
+                            : "text-[#ffffff] hover:bg-[#1a1a1a]"
+                        }`}
+                      >
+                        {item.name}
+                      </div>
+                    </Dropdown>
+                  );
+                }
                 return (
                   <Link key={item.href} href={item.href}>
                     <div
@@ -42,7 +132,7 @@ export default function Navbar() {
                         ${
                           isActive
                             ? "bg-[#ffffff] text-[#000000]"
-                            : "text-[#ffffff]"
+                            : "text-[#ffffff] "
                         }`}
                     >
                       {item.name}
@@ -73,12 +163,30 @@ export default function Navbar() {
                 className="w-[40px] xl:w-[44px] 2xl:w-[48px] h-auto"
               />
             </div>
-            <div className="w-[116px] xl:w-[126px] 2xl:w-[136px] h-[39px] text-[#fff] text-[14px] rounded-[24px] bg-[#050505] flex justify-center items-center">
+            <div className="w-[116px] xl:w-[126px] 2xl:w-[136px] h-[39px] text-[#fff] text-[14px] rounded-[24px] bg-[#050505] flex justify-center items-center hover:bg-[#1a1a1a] transition-colors cursor-pointer">
               <div>Contact Us</div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Custom CSS for dropdown */}
+      <style jsx global>{`
+        .services-dropdown .ant-dropdown {
+          padding: 0;
+        }
+
+        .services-dropdown .ant-dropdown-menu {
+          padding: 0;
+          background: transparent;
+          box-shadow: none;
+          border: none;
+        }
+
+        .services-dropdown .ant-dropdown-menu-item {
+          padding: 0;
+        }
+      `}</style>
     </div>
   );
 }
