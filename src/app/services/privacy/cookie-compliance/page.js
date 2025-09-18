@@ -4,20 +4,20 @@ import Image from "next/image";
 import Head from "next/head";
 import { Collapse } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-import Navbar from "../../shared/Navbar";
-import Hero from "../../../../Hero";
-import SmoothScrollProvider from "../../components/smooth-scroll-provider";
-import Footer from "../../shared/Footer";
-import FAQ from "../../ourComponents/FAQ";
+import Navbar from "../../../shared/Navbar";
+import Hero from "../../../../../Hero";
+import SmoothScrollProvider from "../../../components/smooth-scroll-provider";
+import Footer from "../../../shared/Footer";
+import FAQ from "../../../ourComponents/FAQ";
 import CollapseSection from "@/app/components/CollapseSection";
 
-export default function Home() {
+export default function CookieCompilance() {
   let heading = "Cookie Compliance";
   let customWidth = "750";
   let paragraph =
     "Maintaining cookie compliance is vital for businesses to respect user privacy and meet regulatory standards. CyberData Pros specializes in providing practical guidance, helping businesses implement clear and user-friendly cookie policies. Our expertise minimizes legal risks and establishes trust with customers.";
 
-  let paragraphTop = "top-[490px]";
+  let paragraphTop = "lg:top-[490px]";
   let tabText = "Contact Us";
 
   // Collapse section data

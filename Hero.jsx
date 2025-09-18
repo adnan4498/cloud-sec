@@ -2,7 +2,7 @@ import { SparklesCore } from "@/app/components/ui/sparkles";
 import Image from "next/image";
 import React from "react";
 
-const Hero = ({heading, customWidth="608", paragraph, tabText = "Track Performance", paragraphTop="top-[490px]"}) => {
+const Hero = ({heading, customWidth="608", paragraph, tabText = "Track Performance", paragraphTop="lg:top-[490px]"}) => {
   return (
     <>
       <div className="bg-[#050505] rounded-[30px] lg:rounded-[50px] relative min-h-[800px] lg:h-[1087px] font-poppin mx-2 lg:mx-0">
@@ -105,7 +105,7 @@ const Hero = ({heading, customWidth="608", paragraph, tabText = "Track Performan
             {/* Simplifying Data Privacy & Security */}
             {heading}
           </div>
-          <div className={`lg:absolute lg:${paragraphTop} leading-[133%] font-normal  sm:text-[18px] lg:text-[20px] w-full max-w-[729px] max-h-[135px] flex justify-center items-center text-center text-[#DFDFDF]`}>
+          <div className={`lg:absolute ${paragraphTop} leading-[133%] font-normal  sm:text-[18px] lg:text-[20px] w-full max-w-[729px] max-h-[135px] flex justify-center items-center text-center text-[#DFDFDF]`}>
             <div className="text-center">
               {/* At CLOUDSEC, we recognize the challenges businesses face in
               navigating evolving data security and compliance regulations. Our

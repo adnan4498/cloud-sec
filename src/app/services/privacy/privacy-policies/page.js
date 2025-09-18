@@ -16,13 +16,13 @@ import SmoothScrollProvider from "@/app/components/smooth-scroll-provider";
 import Head from "next/head";
 import Footer from "@/app/shared/Footer";
 
-export default function PrivacyPolicies() {
+export default function Home() {
   // Hero section data
   let heading = "Privacy Policies";
   let customWidth = "750";
   let paragraph =
     "A privacy policy should be specifically crafted for your company. CyberData Pros has worked with hundreds of clients to help generate these policies. Let us customize a Privacy Policy that fits your business.";
-  let paragraphTop = "top-[390px]";
+  let paragraphTop = "lg:top-[390px]";
   let tabText = "Contact Us";
 
   // Collapse section data

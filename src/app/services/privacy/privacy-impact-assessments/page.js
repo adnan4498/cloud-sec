@@ -4,20 +4,20 @@ import Image from "next/image";
 import Head from "next/head";
 import { Collapse } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-import Navbar from "../../shared/Navbar";
-import Hero from "../../../../Hero";
-import SmoothScrollProvider from "../../components/smooth-scroll-provider";
-import Footer from "../../shared/Footer";
-import FAQ from "../../ourComponents/FAQ";
+import Navbar from "../../../shared/Navbar";
+import Hero from "../../../../../Hero";
+import SmoothScrollProvider from "../../../components/smooth-scroll-provider";
+import Footer from "../../../shared/Footer";
+import FAQ from "../../../ourComponents/FAQ";
 import CollapseSection from "@/app/components/CollapseSection";
 
-export default function Home() {
+export default function PrivacyImpactAssessments() {
   let heading = "Privacy Impact Assessments";
   let customWidth = "750";
   let paragraph =
     "Explore the benefits of our Privacy Impact Assessment service, a powerful tool designed to help organizations identify, categorize, and address privacy risks within their data systems in alignment with applicable legislative standards. Our assessments aim to verify privacy compliance with organizational and legal requirements, identify existing privacy risks, and propose effective solutions for risk mitigation.";
 
-  let paragraphTop = "top-[490px]";
+  let paragraphTop = "lg:top-[490px]";
   let tabText = "Contact Us";
 
   // Collapse section data

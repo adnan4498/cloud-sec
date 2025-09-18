@@ -23,8 +23,8 @@ export default function Navbar() {
     {
       title: "Cybersecurity",
       items: [
-        { name: "Endpoint Security", href: "/cybersecurity/endpoint" },
-        { name: "Network Security", href: "/cybersecurity/network" },
+        { name: "Endpoint Security", href: "/services/cybersecurity/endpoint" },
+        { name: "Network Security", href: "/services/cybersecurity/network" },
       ],
     },
     {
@@ -32,24 +32,31 @@ export default function Navbar() {
       items: [
         {
           name: "Privacy Impact Assessments",
-          href: "/privacy/privacy-impact-assessments",
+          href: "/services/privacy/privacy-impact-assessments",
         },
-        { name: "Privacy Policies", href: "/privacy/privacy-policies" },
-        { name: "Cookie Compliance", href: "/privacy/cookie-compliance" },
+        { name: "Privacy Policies", href: "/services/privacy/privacy-policies" },
+        { name: "Cookie Compliance", href: "/services/privacy/cookie-compliance" },
       ],
     },
     {
       title: "Compliance",
       items: [
-        { name: "Audit & Assessment", href: "/compliance/audit" },
-        { name: "Risk Management", href: "/compliance/risk" },
+        { name: "iso-27001", href: "/services/compliance/iso-27001" },
+        { name: "iso-27701", href: "/services/compliance/iso-27701" },
+        { name: "iso-42001", href: "/services/compliance/iso-42001" },
+        { name: "fed-ramp", href: "/services/compliance/fed-ramp" },
+        { name: "cmmc", href: "/services/compliance/cmmc" },
+        { name: "soc", href: "/services/compliance/soc" },
       ],
     },
     {
       title: "Consulting",
       items: [
-        { name: "Strategy", href: "/consulting/strategy" },
-        { name: "Training", href: "/consulting/training" },
+        { name: "Disaster Recovery Plan", href: "/services/consulting/disaster-recovery" },
+        { name: "Business Continuity Plan", href: "/services/consulting/business-continuity" },
+        { name: "Policy Documents", href: "/services/consulting/policy-documents" },
+        { name: "Cloud Infrastructure", href: "/services/consulting/cloud-infrastructure" },
+        { name: "Security Questionnaires", href: "/services/consulting/security-questionnaires" },
       ],
     },
   ];
