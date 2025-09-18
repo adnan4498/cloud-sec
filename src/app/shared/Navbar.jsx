@@ -23,8 +23,12 @@ export default function Navbar() {
     {
       title: "Cybersecurity",
       items: [
-        { name: "Endpoint Security", href: "/services/cybersecurity/endpoint" },
-        { name: "Network Security", href: "/services/cybersecurity/network" },
+        { name: "vciso", href: "/services/cyber-security/vciso" },
+        { name: "security-audits", href: "/services/cyber-security/security-audits" },
+        { name: "Penetration Testing", href: "/services/cyber-security/penetration-testing" },
+        { name: "Table Top Excercises", href: "/services/cyber-security/table-top-excercises" },
+        { name: "Vulnerabillity Scanning", href: "/services/cyber-security/vulnerabillity-scanning" },
+        { name: "Risk Assessments", href: "/services/cyber-security/risk-assessments" },
       ],
     },
     {
@@ -65,19 +69,21 @@ export default function Navbar() {
     <div className="bg-[#050505] border border-[#333333] rounded-[16px] p-6 w-[480px] shadow-2xl">
       <div className="grid grid-cols-2 gap-6">
         {serviceCategories.map((category, index) => (
-          <div key={index} className="space-y-3">
-            <h3 className="text-white font-semibold text-[16px] mb-3 border-b border-[#333333] pb-2">
+          <div key={index} className="space-y-3 ">
+            <h3 className="text-white font-semibold text-[16px] mb-3 border-b border-[#333333] pb-2 ">
               {category.title}
             </h3>
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               {category.items.map((item, itemIndex) => (
                 <Link
                   key={itemIndex}
                   href={item.href}
-                  className="block !text-[#cccccc] hover:text-black bg-white hover:bg-white px-3 py-2 rounded-[8px] text-[14px] transition-all duration-200"
+                  className="block !text-[#cccccc] hover:text-black bg-white  rounded-[8px] text-[14px] transition-all duration-200"
                   onClick={() => setOpen(false)}
                 >
+                  <div className="hover:bg-white hover:text-black px-3 py-2 rounded-lg transition-all duration-200 ease-in-out">
                   {item.name}
+                  </div>
                 </Link>
               ))}
             </div>
