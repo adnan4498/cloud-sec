@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Collapse } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import Navbar from "../../../shared/Navbar";
-import Hero from "../../../../../../../Hero";
+import Hero from "../../../../../Hero";
 import SmoothScrollProvider from "../../../components/smooth-scroll-provider";
 import Footer from "../../../shared/Footer";
 import FAQ from "../../../ourComponents/FAQ";
