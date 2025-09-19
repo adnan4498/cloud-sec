@@ -10,7 +10,7 @@ import CollapseSection from "@/app/components/CollapseSection";
 // import FAQ from "../../components/ourComponents/FAQ";
 // import CollapseSection from "../components/shared/CollapseSection";
 import FAQ from "@/app/ourComponents/FAQ";
-import Hero from "../../../../Hero";
+import Hero from "../../../../../Hero";
 import Navbar from "@/app/shared/Navbar";
 import SmoothScrollProvider from "@/app/components/smooth-scroll-provider";
 import Head from "next/head";
