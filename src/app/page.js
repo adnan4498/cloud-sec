@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Head from "next/head";
 import Navbar from "./shared/Navbar";
-import Hero from "../../Hero";
+// import Hero from "../../Hero";
 import { FacebookOutlined } from "@ant-design/icons";
 import { SparklesCore } from "./components/ui/sparkles";
 import SmoothScrollProvider from "./components/smooth-scroll-provider";
 import Footer from "./shared/Footer";
 import FAQ from "./ourComponents/FAQ";
+import Hero from "../../Hero";
 
 export default function Home() {
 

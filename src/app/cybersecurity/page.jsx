@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../shared/Navbar";
 import Image from "next/image";
-import Hero from "../../../../../Hero";
 import SmoothScrollProvider from "../components/smooth-scroll-provider";
 import Footer from "../shared/Footer";
 import FAQ from "../ourComponents/FAQ";
+import Hero from "../../../Hero";
 
 export default function Home() {
 
