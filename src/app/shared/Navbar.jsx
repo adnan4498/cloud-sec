@@ -13,9 +13,11 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Services", href: "" },
-    { name: "Driven", href: "/driven" },
-    { name: "Support", href: "/support" },
-    { name: "Cyber Security", href: "/cybersecurity" },
+    { name: "About Us", href: "/about" },
+    // { name: "Driven", href: "/driven" },
+    // { name: "Support", href: "/support" },
+    // { name: "Cyber Security", href: "/cybersecurity" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   // Services dropdown items
